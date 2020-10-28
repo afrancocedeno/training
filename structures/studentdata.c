@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include "training.h"
 
-struct infostudent /*struct definition should be avoided in .c files, include this on the header*/
-{
-	char *firstname;
-	char *lastname;
-	int course;
-	float age;
-};
-
 int main(void)
 {
+
+	struct infostudent /*local structure*/
+	{
+		char *firstname;
+		char *lastname;
+		int course;
+		float age;
+	};
 /*declaration - student1 variable with user datatype infostudent*/
 	struct infostudent student1;
 

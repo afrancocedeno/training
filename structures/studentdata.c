@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include "training.h"
 
+struct infostudent /*struct definition should be avoided in .c files, include this on the header*/
+{
+	char *firstname;
+	char *lastname;
+	int course;
+	float age;
+};
+
 int main(void)
 {
 /*declaration - student1 variable with user datatype infostudent*/

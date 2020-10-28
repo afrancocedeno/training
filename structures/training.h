@@ -1,7 +1,12 @@
+#ifndef __TRAINING_H__
+#define __TRAINING_H__
 
 /**
- * infostudent - user defined datatype
- *
+ * struct infostudent - user defined datatype.
+ * @firstname: pointer char with firstname.
+ * @lastname: pointer char with lastname.
+ * @course: int variable with course.
+ * @age: intput variable with age.
  */
 
 /*global structure, outside the main but not inside .c file*/
@@ -12,3 +17,4 @@ struct infostudent
 	int course;
 	float age;
 };
+#endif

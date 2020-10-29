@@ -16,7 +16,7 @@ int main(void)
 	student1.lastname = "Cedeño";
 	student1.course = 13;
 	student1.age = 25.5;
-	
+/*program output*/
 	printf("%s\n", student1.firstname);
 	printf("%s\n", student1.lastname);
 	printf("%i\n", student1.course);

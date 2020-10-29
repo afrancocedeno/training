@@ -1,22 +1,18 @@
 #include <stdio.h>
 
-struct infostudent
-{
-	char *firstname;
-	char *lastname;
-	int course;
-	float age;
-};
-
+/**
+ * main -entry point function.
+ * Return: 0 succes.
+ */
 int main(void)
 {
 	struct infostudent student1;
 	struct infostudent *ptr_student1;
 
 	ptr_student1 = &student1;
-	
+
 	(*ptr_student1).firstname = "Alejo";
-	(*ptr_student1).lastname= "Cedeño";
+	(*ptr_student1).lastname = "Cedeño";
 	ptr_student1->course = 13;
 	ptr_student1->age = 25.8;
 

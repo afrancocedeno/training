@@ -6,7 +6,7 @@
  *
  * Return: length number.
  */
-int string_lenght(void)
+int string_length(void)
 {
 	unsigned int i = 0;
 	char *string_pointer = NULL;

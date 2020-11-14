@@ -1,17 +1,14 @@
-/* .h that includes NULL*/
-#include <stdlib.h>
-
 /**
- * string_lenght - function that return the length.
+ * string_length: funcitons that claculate the lenght of a string.
+ * @str: input string.
  *
- * Return: length number.
+ * Return: the lenght of the string.
  */
-int string_length(void)
+int string_length(char *str)
 {
-	unsigned int i = 0;
-	char *string_pointer = NULL;
+        int i = 0;
 
-	for (; *(string_pointer + i) != '\0'; i++)
-		;
-	return (i);
+        for (; *(str + i); i++)
+                ;
+        return(i);
 }

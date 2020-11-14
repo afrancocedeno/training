@@ -6,7 +6,7 @@
 int string_lenght(void)
 {
 	unsigned int i = 0;
-	char *string_lenght = NULL;
+	char *string_pointer = NULL;
 
 	for (; *(string_pointer + i) != '\0'; i++)
 		;

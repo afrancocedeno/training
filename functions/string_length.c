@@ -1,3 +1,6 @@
+/* .h that includes NULL*/
+#include <stdlib.h>
+
 /**
  * string_lenght - function that return the length.
  *

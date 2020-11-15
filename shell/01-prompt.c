@@ -12,16 +12,14 @@ int main(void)
 	ssize_t char_ammount = 0;
 	size_t line_size = 0;
 
-		/* STDOUT_FILENO is a POSIX const, with value int 1, for standar output */
+	while (char_ammount != EOF)
+	{	/* STDOUT_FILENO is a POSIX const, with value int 1, for standar output */
 		write(STDOUT_FILENO, prompt, string_length(prompt));
 		/* from the place we want to get the line, from screen, so stdin, otherwise stdout ptints nothing*/
 		char_ammount = getline(&line, &line_size, stdin);
-
 		write(STDOUT_FILENO, line, char_ammount);
-
+	}
 	return (0);
-
-/* master the strlen and the stdin */
 }
 
 /**

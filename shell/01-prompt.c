@@ -18,8 +18,7 @@ int main(void)
 		char_ammount = getline(&line, &line_size, stdin);
 
 		write(STDOUT_FILENO, line, char_ammount);
-		write(STDOUT_FILENO, line, string_length(line));
-		write(STDOUT_FILENO, line, line_size);
+
 	return (0);
 
 /* master the strlen and the stdin */

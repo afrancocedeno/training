@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	char *prompt = "($) ";
+	char *prompt = "($) \n";
 	int string_length(char *str);
 
 		write(STDOUT_FILENO, prompt, string_length(prompt));

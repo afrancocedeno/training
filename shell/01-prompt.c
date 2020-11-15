@@ -4,7 +4,6 @@
 /* .h that includes constan POSIX: STDOUT_FILENO */
 #include <unistd.h>
 
-
 int main(void)
 {
 	char *prompt = "($) ", *line = NULL;
@@ -21,11 +20,6 @@ int main(void)
 		write(STDOUT_FILENO, line, char_ammount);
 		write(STDOUT_FILENO, line, string_length(line));
 		write(STDOUT_FILENO, line, line_size);
-		printf("\n");
-		printf("chammnt: %lu\n", char_ammount);
-		printf("strlen: %i\n", string_length(line));
-		/* line_size is always 120, if not enoght it reallocs */
-		printf("lsize: %lu\n", line_size);
 	return (0);
 
 /* master the strlen and the stdin */

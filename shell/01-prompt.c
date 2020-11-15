@@ -1,6 +1,9 @@
+/* .hs that includes constain getline funciton */
+#define _GNU_SOURCE
+#include <stdio.h>
 /* .h that includes constan POSIX: STDOUT_FILENO */
 #include <unistd.h>
-#include <stdio.h>
+
 
 int main(void)
 {

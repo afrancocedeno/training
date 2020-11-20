@@ -6,6 +6,7 @@
 
 /**
  * main - enry point function that is a process and his child.
+ * one fork means message is going to be printed twice.
  *
  * Return: 0 for success.
  */

@@ -14,9 +14,4 @@ int main(void)
 {
 	int id = fork();
 
-	if (id == 0)
-		printf("the id of the child process is: %d\n", id);
-	else
-		printf("the id of the main (parent) process is: %d\n", id);
-	return (0);
 }

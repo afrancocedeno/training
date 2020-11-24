@@ -1,7 +1,7 @@
-/* environ headers */
-#define _GNU_SOURCE
+#define _GNU_SOURCE /* environ headers */
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h> /* strok headers */
 
 /**
  * main - entry point funciton.
@@ -11,7 +11,7 @@
 int main(void)
 {
 	/* for (; environ[i] != NULL; i++) printf("[%i] : %s\n", i, environ[i]); */
-	printf("%s\n", environ[25]);
+	printf("%s\n", *environ);
 /* identificar PATH en doble puntero **env */
 /* tokenizar con "=" PATH = __rutas__ */
 /* identificar segundo token "__rutas__" */

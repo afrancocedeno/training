@@ -10,14 +10,24 @@
  */
 int main(void)
 {
-	/* char *env_var = "PATH";
+	char *env_var = "PATH";
 	int i = 0, j = 0;
 
-	for (; *(environ + i); i++)
+	
+
+	/*for (; *(environ + i); i++)
 	{
-		for (;*(*(environ + i) + j) ; j++)
+		for (; *(strtok(*(environ + i), "=") + j) || *(env_var + j); j++)
 		{
-			;
+			if (*(strtok(*(environ + i), "=") + j) != *(env_var + j))
+			{
+				continue;
+				printf("is different at: [%i]\n", i);
+			}
+			else
+			{
+				printf("I found it at: [%i]\n", i);
+			}
 		}
 	}*/
 

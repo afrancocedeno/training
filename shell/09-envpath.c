@@ -11,29 +11,17 @@
 int main(void)
 {
 	char *env_var = "PATH";
-	int i = 0, j = 0;
+	int i = 0;
 
-	
+	printf("from PATH: \n");
+	for (; *(strtok(*(environ + 25), "=") + i); i++)
+		printf("[%d] : %c\n", i, *(strtok(*(environ + 25), "=") + i));
+	printf("from main: \n");
+	for (i = 0; *(env_var + i) != '\0'; i++)
+		printf("[%d] : %c\n", i, *(env_var + i));
 
-	/*for (; *(environ + i); i++)
-	{
-		for (; *(strtok(*(environ + i), "=") + j) || *(env_var + j); j++)
-		{
-			if (*(strtok(*(environ + i), "=") + j) != *(env_var + j))
-			{
-				continue;
-				printf("is different at: [%i]\n", i);
-			}
-			else
-			{
-				printf("I found it at: [%i]\n", i);
-			}
-		}
-	}*/
-
-	printf("%s\n", strtok(environ[25], "="));
-
-	printf("%c\n", *(strtok(*(environ + 25), "=") + 1));
+	/* printf("%s\n", strtok(environ[25], "="));
+	printf("%c\n", *(strtok(*(environ + 25), "=") + 1)); */
 
 	/* identificar PATH en doble puntero **env */
 	/* tokenizar con "=" PATH = __rutas__ */

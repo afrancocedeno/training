@@ -10,13 +10,17 @@
  */
 int main(void)
 {
+	char *env_var = "PATH";
 	int i = 0, j = 0;
 
 	for (; (strtok(*(environ + j), "=") + i) != NULL; j++)
 	{
 		printf("[%d] : ", j);
 		for (; *(strtok(*(environ + j), "=") + i) != '\0'; i++)
-			printf("%c", *(strtok(*(environ + j), "=") + i));
+			if (*(strtok(*(environ + j), "=") + i) == *(env_var + i))
+			{
+				printf("%c", *(strtok(*(environ + j), "=") + i));
+			}
 		printf("\n");
 		i = 0;
 	}

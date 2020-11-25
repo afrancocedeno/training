@@ -10,13 +10,10 @@
  */
 int main(void)
 {
-	int i = 0;
+	printf("%s\n", environ[25]);
+	printf("%s\n", strtok(environ[25], "="));
+	printf("%c\n", *(strtok(environ[25], "=") + 1));
 
-	for (; environ[i]; i++)
-	{
-		printf("[%i] : %s\n", i, environ[i]);
-		/* printf("%s\n", strtok(environ[i], "=")); */
-	}
 	/* identificar PATH en doble puntero **env */
 	/* tokenizar con "=" PATH = __rutas__ */
 	/* identificar segundo token "__rutas__" */

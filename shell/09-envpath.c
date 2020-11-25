@@ -10,25 +10,19 @@
  */
 int main(void)
 {
-	char *env_var = "PATH";
 	int i = 0, j = 0;
 
-	/* 1. tokenizar con "=" PATH = __rutas__ > *(strtok(*(environ + j), "=") + i)*/
-	while (*(strtok(*(environ + j), "=") + i))
+	for (; (strtok(*(environ + j), "=") + i) != NULL; j++)
 	{
-		for (; *(strtok(*(environ + j), "=") + i); i++)
-		{
-			if (*(strtok(*(environ + 25), "=") + i) != *(env_var + i))
-			{
-				j++;
-				break;
-			}
-			else
-				printf("PATH : %c; main : %c\n", *(strtok(*(environ + 25), "=") + i), *(env_var + i));
-		}
+		printf("[%d] : ", j);
+		for (; *(strtok(*(environ + j), "=") + i) != '\0'; i++)
+			printf("%c", *(strtok(*(environ + j), "=") + i));
+		printf("\n");
+		i = 0;
 	}
 	return (0);
 }
+	/* 1. tokenizar con "=" PATH = __rutas__ > *(strtok(*(environ + j), "=") + i)*/
 	/* 2. identificar PATH en doble puntero **env */
 	/* 3. tokenizar string resultante con ":"" separando rutas */
 	/* 4. identificar segundo token "__rutas__" */

@@ -31,9 +31,10 @@ int main(void)
 	printf("%s\n", *var_keeper);
 	return (0);
 }
-	/* 1. identificar PATH en doble puntero **env */
-	/* 2. tokenizar con "=" PATH = __rutas__ > *(strtok(*(environ + j), "=") + i)*/
-	/* 3. tokenizar string resultante con ":"" separando rutas */
-	/* 4. identificar segundo token "__rutas__" */
-	/* 5. identificar la ruta solicitada con stat*/
-	/* 6. comando va a excecve con un / despues de ruta */
+/* 1. identificar PATH en doble puntero **env */
+/* 2. tokenizar con "=" PATH = __rutas__ > *(strtok(*(environ + j), "=") + i)*/
+/* 3. tokenizar string resultante con ":"" separando rutas */
+/* 4. identificar segundo token "__rutas__" */
+/* 5. identificar la ruta solicitada con stat*/
+/* 6. comando va a excecve con un / despues de ruta */
+/* funcion comparar strings y retornar 0 si cumple y conservar index en funcion main. */

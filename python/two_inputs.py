@@ -10,9 +10,9 @@ product = num1 * num2
 quotient = num1 / num2
 reminder = num1 % num2
 
-print('addition: {} + {} = {}'.format(num1, num2, addition))
-print('difference: {} - {} = {}'.format(num1, num2, difference))
-print('product: {} * {} = {}'.format(num1, num2, product))
-print('quotient: {} / {} = {}'.format(num1, num2, quotient))
-print('reminder: {} % {} = {}'.format(num1, num2, reminder))
+print("difference: {} - {} = {}".format(num1, num2, difference))
+print("addition: {} + {} = {}".format(num1, num2, addition))
+print("product: {} * {} = {}".format(num1, num2, product))
+print("quotient: {} / {} = {}".format(num1, num2, quotient))
+print("reminder: {} % {} = {}".format(num1, num2, reminder))
 

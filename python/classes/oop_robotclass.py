@@ -7,4 +7,4 @@ if __name__ == "__main__":
     y = Robot()
     y2 = y
     print(y == y2)
-    print(y == x)
+    print(y == x)  # False because y is different from x

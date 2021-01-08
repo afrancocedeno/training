@@ -14,7 +14,8 @@ print("using insert at id[2] =", lista)
 lista.extend(["Humberto", "Carlos", "Jorge"])
 print("using extend at the end =", lista)
 print("Gerardo is in the index:", lista.index("Gerardo"))
-print("in returns True or False for Liliana in lista", "Liliana" in lista)
+print("in returns True or False for Liliana\
+    in lista", "Liliana" in lista)  # in returns true or false
 python_list = ["string", 2, False, 4.8]
 print(python_list)
 python_list.remove("string")

@@ -22,4 +22,4 @@ print("after .remove string =", python_list)
 print("print the last and remove it using\
     pop inside print =", python_list.pop())
 print("after using pop = ", python_list)
-print(lista + python_list)
+print(lista + (python_list * 2))
